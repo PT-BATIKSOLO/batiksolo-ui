@@ -40,7 +40,12 @@ export class View {
         this.params = params;
         this.info.keyword = '';
 
+        console.log(params);
+
         this.storageId = params.storageId;
+
+        console.log(this.storageId);
+
         this.itemCode = params.itemCode; 
         
         
@@ -52,7 +57,7 @@ export class View {
         this.tableData=[];
         this.total=0;
         this.totalharga=0;
-        //this.storageId= this.storage ? this.storage._id : "";
+        //this.storageId = this.storage ? this.storage._id : "";
         this.filter = this.filter;
         var index=1;
         this.service.getAllMovement(this.storageId, this.itemCode, this.info)
