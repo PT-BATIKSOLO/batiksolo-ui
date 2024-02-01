@@ -7,6 +7,7 @@ var authRoutes = require("./auth");
 var finishingRoutes = require("./finishing");
 var generalInventoryRoutes = require("./general-inventory");
 var batikSoloRoutes = require("./batik-solo-report");
+var merchandiserRoutes=require("./merchandiser");
 
 export default [].concat(
   nmasterRoutes,
@@ -17,5 +18,6 @@ export default [].concat(
   laporanRoutes,
   authRoutes,
   generalInventoryRoutes,
-  batikSoloRoutes
+  batikSoloRoutes,
+  merchandiserRoutes
 );
